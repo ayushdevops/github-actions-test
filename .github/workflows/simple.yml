@@ -14,5 +14,10 @@ jobs:
          npm -v
          pwd
          ls -lrt
+      - name: python Commands
+        run: |
+         import platform
+         print(platform.processor())
+        Shell: python
           
 
