@@ -8,7 +8,13 @@ jobs:
       steps:
           - name: List the files
             run: |
-              ls -lrt
+              ls -lart
+              pwd
+          - name: Checkout
+            uses: actions/checkout@v2.3.3
+          - name: List the files after checkout
+            run: |
+              ls -lart
               pwd
           - name: Simple JS Action
             id: greet
