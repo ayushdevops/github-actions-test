@@ -4,6 +4,8 @@ on:
   push:
   pull_request:
       types: [closed, opened, reopened, assigned]
+  issues:
+    types: [assigned, unassigned, opened, reopened, deleted , demilestoned]
 
 jobs:
     run-github-actions:
