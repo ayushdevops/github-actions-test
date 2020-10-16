@@ -17,7 +17,6 @@ jobs:
           arg: 'Hello World'
       - name: Log node version 2 
         uses: docker://node:12.19.0-alpine3.10
-        run: node -v
         with: 
           entrypoint: '/usr/local/bin/node'
           args: '-v'
