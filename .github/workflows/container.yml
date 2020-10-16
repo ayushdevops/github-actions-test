@@ -12,7 +12,6 @@ jobs:
         run: node -v
       - name: step with docker
         uses: docker://node:12.19.0-alpine3.10
-        run: node -v
         with: 
           entrypoint: '/bin/echo'
           arg: 'Hello World'
